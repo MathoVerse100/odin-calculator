@@ -269,17 +269,6 @@ function evaluatePostfix(postfix) {
 };
 
 
-function binomialCoefficient(n, r) {
-    if (n < r) {
-        return 0;
-    } else if (n % 1 !== 0 || r % 1 !== 0) {
-        return NaN;
-    } else {
-        return operate(factorial(n), operate(factorial(n - r), factorial(r), "*"), "/");
-    };
-};
-
-
 function historyBox(snapshot, divPlacement) {
     const createNewsElement = () => {
         const news = document.createElement('div');

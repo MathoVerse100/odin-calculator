@@ -141,7 +141,7 @@ function operate(a, b, operator) {
         case "R":
             answer = a ** (1/b);
             break;
-        case "log base":
+        case "log-base":
             answer = Math.log(a) / Math.log(b);
             break;
         case "L":

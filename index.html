@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="sides"></div>
+  <div class="calculations">
+    <div class="head">
+      <button class="navigation">
+        <img class="navigation-image" src="./images/navigation.png">
+      </button>
+      <button class="calculator-type">Standard</button>
+      <button class="history">
+        <img class="history-image" src="./images/history.png">
+      </button>
+    </div>
+    <div class="display">
+      <div class="display-equation">
+        <div class="display-equation-scroll">
+
+        </div>
+      </div>
+      <div class="display-frontier">
+        <div class="display-frontier-scroll">
+          0
+        </div>
+      </div>
+    </div>
+    <div class="inputs standard">
+      <div class="input-row">
+        <button class="input-button percent">%</button>
+        <button class="input-button CE">CE</button>
+        <button class="input-button C">C</button>
+        <button class="input-button backspace">⌫</button>
+      </div>
+      <div class="input-row">
+          <button class="input-button reciprocal">1/x</button>
+          <button class="input-button squared">x²</button>
+          <button class="input-button squareRoot">²√x</button>
+          <button class="input-button divide">÷</button>
+      </div>
+    <div class="input-row">
+        <button class="input-button seven">7</button>
+        <button class="input-button eight">8</button>
+        <button class="input-button nine">9</button>
+        <button class="input-button multiply">×</button>
+      </div>
+      <div class="input-row">
+          <button class="input-button four">4</button>
+          <button class="input-button five">5</button>
+          <button class="input-button six">6</button>
+          <button class="input-button minus">−</button>
+      </div>
+      <div class="input-row">
+          <button class="input-button one">1</button>
+          <button class="input-button two">2</button>
+          <button class="input-button three">3</button>
+          <button class="input-button plus">+</button>
+      </div>
+      <div class="input-row">
+          <button class="input-button negate">+/-</button>
+          <button class="input-button zero">0</button>
+          <button class="input-button decimal">.</button>
+          <button class="input-button equal">=</button>
+      </div>
+    </div>
+
+    <div class="inputs scientific">
+      <div class="input-row">
+        <button class="input-button second-options">2nd</button>
+        <button class="input-button pi">π</button>
+        <button class="input-button euler">e</button>
+        <button class="input-button C">C</button>
+        <button class="input-button backspace">⌫</button>
+      </div>
+      <div class="input-row">
+          <button class="input-button first-option squared">x²</button>
+          <button class="input-button second-option cubed">x³</button>
+          <button class="input-button reciprocal">1/x</button>
+          <button class="input-button modulus">|x|</button>
+          <button class="input-button percent">%</button>
+          <button class="input-button mod">mod</button>
+      </div>
+      <div class="input-row">
+          <button class="input-button first-option squareRoot">²√x</button>
+          <button class="input-button second-option cubeRoot">³√x</button>
+          <button class="input-button left-bracket">(</button>
+          <button class="input-button right-bracket">)</button>
+          <button class="input-button factorial">n!</button>
+          <button class="input-button divide">÷</button>
+      </div>
+      <div class="input-row">
+          <button class="input-button first-option xPowerY">x<sup class="superscript">y</sup></button>
+          <button class="input-button second-option yRootX"><sup class="superscript">y</sup>√x</button>
+          <button class="input-button seven">7</button>
+          <button class="input-button eight">8</button>
+          <button class="input-button nine">9</button>
+          <button class="input-button multiply">×</button>
+      </div>
+      <div class="input-row">
+          <button class="input-button first-option tenPower">10<sup class="superscript">x</sup></button>
+          <button class="input-button second-option twoPower">2<sup class="superscript">x</sup></button>
+          <button class="input-button four">4</button>
+          <button class="input-button five">5</button>
+          <button class="input-button six">6</button>
+          <button class="input-button minus">−</button>
+      </div>
+      <div class="input-row">
+          <button class="input-button first-option log">log</button>
+          <button class="input-button second-option logXBaseY">log<sub class="subscript">y</sub>x</button>
+          <button class="input-button one">1</button>
+          <button class="input-button two">2</button>
+          <button class="input-button three">3</button>
+          <button class="input-button plus">+</button>
+      </div>
+      <div class="input-row">
+          <button class="input-button first-option ln">ln</button>
+          <button class="input-button second-option nChooseR"><sup class="superscript">n</sup>C<sub class="subscript">r</sub></button>
+          <button class="input-button negate">+/-</button>
+          <button class="input-button zero">0</button>
+          <button class="input-button decimal">.</button>
+          <button class="input-button equal">=</button>
+      </div>
+    </div>
+
+    <div class="timeline-copy">
+      <div class="head">
+        <button class="head-title">History</button>
+        <button class="head-about">About</button>
+      </div>
+      <div class="copy-history timeline-history">
+  
+      </div>
+      <div class="timeline-about">
+        <div class="introduction">WOW WOW</div>
+      </div>
+      <div class="foot">
+        <button class="trash">
+            <img class="trash-image" src="./images/trash.png">
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="timeline">
+    <div class="head">
+      <button class="head-title">History</button>
+      <button class="head-about">About</button>
+    </div>
+    <div class="original-history timeline-history">
+
+    </div>
+    <div class="timeline-about">
+      <div class="introduction">WOW WOW</div>
+    </div>
+    <div class="foot">
+      <button class="trash">
+          <img class="trash-image" src="./images/trash.png">
+      </button>
+  </div>
+  </div>
+  <div class="sides"></div>
+</body>
+</html>

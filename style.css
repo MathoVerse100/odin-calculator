@@ -1,0 +1,364 @@
+/*
+--------------------------------
+--------------------------------
+--------------------------------
+Universal Styles
+--------------------------------
+--------------------------------
+--------------------------------
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid black;*/
+
+    background-color: rgb(243, 243, 243);
+    box-sizing: border-box;
+}
+
+/*
+--------------------------------
+--------------------------------
+--------------------------------
+Root + Node Level 1
+--------------------------------
+--------------------------------
+--------------------------------
+*/
+
+html, body {
+    overflow-x: hidden;
+}
+
+html {
+    min-height: 460px;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+/*
+--------------------------------
+--------------------------------
+--------------------------------
+Node Level 2
+--------------------------------
+--------------------------------
+--------------------------------
+*/
+
+@media (max-width: 799px) {
+    .sides {
+        flex: 0.01 3 auto;
+    }
+}
+
+.calculations {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1 4;
+    height: 99vh;
+
+    min-height: 460px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+
+    height: 99vh;
+    flex: 4 1;
+
+    min-height: 460px;
+    overflow: auto;
+}
+
+.timeline-copy {
+    display: none;
+    height: 200px;
+    overflow: auto;
+}
+
+@media (max-width: 799px) {
+    .timeline {
+        display: none;
+    }
+}
+
+
+/*
+--------------------------------
+--------------------------------
+--------------------------------
+Node Level 3
+--------------------------------
+--------------------------------
+--------------------------------
+*/
+
+.head, .foot {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+
+    flex: 0 1;
+
+    min-height: 45px;
+
+    box-sizing: border-box;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    flex: 1 1 10vh;
+    overflow: auto;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 5px;
+
+    padding-bottom: 5px;
+    flex: 3 3;
+}
+
+.scientific {
+    display: none;
+}
+
+.timeline-history {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    overflow: auto;
+}
+
+.timeline-about {
+    display: none;
+    flex: 1 1;
+
+    overflow: auto;
+}
+
+/*
+--------------------------------
+--------------------------------
+--------------------------------
+Node Level 4
+--------------------------------
+--------------------------------
+--------------------------------
+*/
+
+.navigation, .calculator-type, .history, .trash {
+    height: 30px;
+    width: auto;
+
+    background-color: rgb(243, 243, 243);
+    padding-left: 15px;
+    padding-top: 10px;
+    border: 0;
+    font-size: 24px;
+    font-family: "Trebuchet", Helvetica, sans-serif;
+    font-weight: 600;
+
+    box-sizing: border-box;
+}
+
+.history {
+    margin-right: 2vw;
+    margin-left: auto;
+}
+
+@media (min-width: 800px) {
+    .history {
+        display: none;
+    }
+}
+
+.display-equation, .display-frontier {
+    padding-right: 2vw;
+    text-align: right;
+    font-family: 'Lucida Console', Consolas, 'Courier New', Courier, monospace;
+
+    box-sizing: border-box;
+}
+
+.display-equation {
+    align-self: stretch;
+    height: 25px;
+
+    font-size: 16px;
+    font-family: arial;
+    color: gray;
+    overflow: auto;
+}
+
+.display-frontier {
+    display: flex;
+    align-self: stretch;
+    overflow: auto;
+}
+
+.input-row {
+    display: flex;
+    gap:5px;
+
+    flex: 1 1;
+
+    padding-right: 5px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.extra-inputs {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.head-title, .head-about {
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: right;
+    border: 0;
+
+    border-bottom-left-radius: 0.125vh;
+    border-bottom-right-radius:  0.125vh;
+
+    box-sizing: border-box;
+}
+
+.head-title {
+    margin-left: 1vw;
+    border-bottom: 0.25vh solid black;
+}
+
+.head-about {
+    border-bottom: 0.25vh solid rgb(243, 243, 243);
+}
+
+.head-title:hover, .head-about:hover {
+    color: gray;
+}
+
+.head-title:active, .head-about:active {
+    color: rgb(187, 187, 187);
+}
+
+.introduction {
+    padding: 1vw;
+}
+
+.trash {
+    margin-right: 0;
+    margin-left: auto;
+    padding-right: 1vw;
+}
+
+/*
+--------------------------------
+--------------------------------
+--------------------------------
+Node Level 5
+--------------------------------
+--------------------------------
+--------------------------------
+*/
+
+.navigation img, .history img, .trash img {
+    height: 25px;
+    width: auto;
+}
+
+.navigation img:hover, .history img:hover, .trash img:hover {
+    background-color: gray;
+}
+
+.navigation img:active, .history img:active, .trash img:active {
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.display-equation-scroll {
+    flex-grow: 1;
+}
+
+.display-frontier-scroll {
+    flex-grow: 1;
+    padding-top: 2vh;
+
+    width: 67vw;
+    font-size: 50px;
+}
+
+@media (max-width: 799) {
+
+    .display-frontier {
+        display: flex;
+        justify-content: stretch;
+    }
+
+    .display-frontier-scroll {
+        width: 100vw;
+    }
+}
+
+.input-button {
+    flex: 1 1;
+
+    background-color: white;
+    border: 0px;
+    border-radius: 8px;
+
+    text-align: center;
+    font-size: 18px;
+
+    box-shadow: 0 0 3px rgba(106, 106, 106, 0.5);
+}
+
+.input-button:hover {
+    background-color: rgb(220, 220, 220);
+    transition: 0.5s;
+}
+
+.input-button:active {
+    background-color: rgb(210, 210, 210);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.second-option {
+    display: none;
+}
+
+.equal {
+    background-color: rgb(41, 41, 192);
+    color: white;
+}
+
+.equal:hover {
+    background-color: rgb(19, 22, 116);
+    transition: 0.5s;
+}
+
+.equal:active {
+    background-color: rgb(9, 12, 106);
+}
+
+sup, sub {
+    background-color: transparent;
+}

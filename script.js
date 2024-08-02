@@ -1,5 +1,4 @@
 /*..............................*/
-const allElements = getEverything();
 const numbers = {
     zero: 0, one: 1,
     two: 2, three: 3,
@@ -395,7 +394,10 @@ function convertStandardScinetific() {
     };
 };
 
-
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+const allElements = getEverything();
 let frontier = ['0', ''];
 let operand = [];
 let equation = '';
@@ -405,6 +407,9 @@ let bracketContainer = '';
 let bracketAnswer;
 let isHistory = false;
 const history = []
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
 
 
 window.addEventListener("resize", () => {

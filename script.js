@@ -1093,13 +1093,16 @@ document.addEventListener("keydown", (event) => {
             allElements[`.factorial`].dispatchEvent(new Event("click"));
             break;
         case "%":
-            allElements[`.percentage`][0].dispatchEvent(new Event("click"));
+            allElements[`.percent`][0].dispatchEvent(new Event("click"));
             break;
         case "^":
             allElements[`.xPowerY`].dispatchEvent(new Event("click"));
             break;
         case "|":
             allElements[`.modulus`].dispatchEvent(new Event("click"));
+            break;
+        case "m":
+            allElements[`.mod`].dispatchEvent(new Event("click"));
             break;
         case "r":
             allElements[`.yRootX`].dispatchEvent(new Event("click"));

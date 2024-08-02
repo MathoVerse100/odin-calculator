@@ -362,3 +362,7 @@ Node Level 5
 sup, sub {
     background-color: transparent;
 }
+
+li {
+    margin-left: 20px;
+}
